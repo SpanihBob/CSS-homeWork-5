@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>страница с вертикальным меню</title>
+
+    <style>
+        
+        * {box-sizing: border-box;}/* чтобы браузер учитывал рамки (border) и внутренние отступы (padding) в размере ширины (width) элемента. */
+    
+        body {font-family: monospace;/* делаем шрифт моноширинный */
+            background-color: #d4d4d4;/* цвет фона */ 
+        }          
+   
+        article {width: 650px;/* ширина экрана */
+                margin: 40px auto;/* отступы от края элемента */
+                padding: 40px 40px 40px;/* поля вокруг содержимого элемента */
+                background-color: #685ca7;}/* задний фон */
+        
+        .scr{float: left;/* установить элемент слева */
+            margin-right: 15px; }/* отступ от края элемента справа */
+          
+        .block:after { clear: both;}/* Отменяет обтекание элемента одновременно с правого и левого края. 
+                                        Это значение рекомендуется устанавливать, когда требуется снять обтекание элемента, но неизвестно точно с какой стороны. */
+        .block::before, .block::after {content: "";    /* вставляем строку пустого  контента */
+                                       display: table;}/* Определяет, что элемент является блочной таблицей подобно использованию тега <table>. */
+               
+        .block {padding: 10px;}/* отступы границы блока от контента */
+        .size {font-size: 350%;}      /* размер текста */
+        
+        /* применяем эффект при наведении курсора */
+        .effect:hover {opacity: .5;/* меняем прозрачность */
+                    cursor: pointer;/* стрелочка меняется на руку */
+                    color: rgb(64, 64, 117);/* меняем цвет текста */
+                    background-color: rgb(211, 207, 3);}/* меняем цвет фона */
+                    
+
+    </style>
+</head>
+
+
+<body>
+<article>
+   
+    <div class="block  effect"><!-- прописываем 2 параметра блок и эффект из css -->
+        <img src="fru/edit.png" width="150pn" alt="edit" class="scr">
+        <p class="size">Edit</p>
+    </div>
+
+    <div class="block  effect">
+        <img src="fru/favorites.png" width="150pn" alt="favorites" class="scr">
+        <p class="size">Favorites</p>
+    </div>
+
+    <div class="block  effect">
+        <img src="fru/history.png" width="150pn" alt="history" class="scr">
+        <p class="size">History</p>
+    </div>
+
+    <div class="block  effect">
+        <img src="fru/security.png" width="150pn" alt="security" class="scr">
+        <p class="size">Security</p>
+    </div>
+
+    <div class="block  effect">
+        <img src="fru/settings.png" width="150pn" alt="settings" class="scr">
+        <p class="size">Settings</p>
+    </div>
+
+</article>
+</body>
+</html>

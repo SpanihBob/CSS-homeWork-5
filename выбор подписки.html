@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>выбор подписки</title>
+
+    <style>
+        body{margin: 5%;
+            font-weight: 600;
+            background-color: rgb(223, 215, 220);}
+        article{width: 1400px;}
+        .conteiner{display: inline-block;
+                    width: 250px;
+                    height: 400px;
+                    padding: 3%;}
+        .entereprice:hover{ cursor: pointer;/* стрелочка меняется на руку */
+                            transform: scale(1.2,1.2);} /*масштабирование элемента по ширине и высоте*/
+        .entereprice{   display: block;
+                        transition: 1s;}
+        .professional:hover{cursor: pointer;/* стрелочка меняется на руку */
+                            transform: scale(1.2,1.2);} /*масштабирование элемента по ширине и высоте*/
+        .professional{  display: block;
+                        transition: 1s;}
+        .standart:hover{cursor: pointer;/* стрелочка меняется на руку */
+                        transform: scale(1.2,1.2);} /*масштабирование элемента по ширине и высоте*/
+        .standart{  display: block;
+                    transition: 1s;}
+        .basic:hover{   cursor: pointer;/* стрелочка меняется на руку */   
+                        transform: scale(1.2,1.2);} /*масштабирование элемента по ширине и высоте*/
+        .basic{ display: block;
+                transition: 1s;}
+        .block{ padding: 10%;             
+                border-radius: 10%;
+                box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);/* тень */
+                background-color: lavenderblush;
+                margin: auto;}
+        .entereprice th{border-bottom: 3px solid red;}
+        .professional th{border-bottom: 3px solid orange;}
+        .standart th{border-bottom: 3px solid blue;}
+        .basic th{border-bottom: 3px solid green;}
+        td{text-align: center;
+        height: 40px;}
+
+        .knopka{line-height: 30px;            /* выставляем расстояние между строками текста */
+                height: 30px;
+                width: 100px;
+                border-radius: 10%;
+                margin: auto;
+            color:white;}
+        .gray{color: rgb(185, 182, 182);}
+        .red{background-color: red;}
+        .orange{background-color: orange;}
+        .blue{background-color: blue;}
+        .green{background-color: green;}
+        .prise{font-size: 300%;}
+    </style>
+</head>
+
+<body><article>
+    <div class="conteiner">
+            <div class="entereprice block">                
+              <table>
+                  <tr><th>ENTERPRICE</th></tr>
+                  <tr><td class="prise">$69</td></tr>
+                  <tr><td class="gray">per month</td></tr>
+                  <tr><td>10GB disk space</td></tr>
+                  <tr><td>100GB mounthly bandwidth</td></tr>
+                  <tr><td>20 email accounts</td></tr>
+                  <tr><td>Unlimited subdoments</td></tr>
+                  <tr><td><div class="knopka red"> BUY</div></td></tr>
+              </table>  
+            </div>
+      </div>
+
+      <div class="conteiner">
+          <div class="professional block">
+            <table>
+                <tr><th>ENTERPRICE</th></tr>
+                <tr><td class="prise">$29</td></tr>
+                <tr><td class="gray">per month</td></tr>
+                <tr><td>5GB disk space</td></tr>
+                <tr><td>60GB mounthly bandwidth</td></tr>
+                <tr><td>10 email accounts</td></tr>
+                <tr><td>Unlimited subdoments</td></tr>
+                <tr><td><div class="knopka orange">BUY</div></td></tr>
+            </table>  
+          </div>
+      </div>
+
+      <div class="conteiner">
+          <div class="standart block">
+            <table>
+                <tr><th>ENTERPRICE</th></tr>
+                <tr><td class="prise">$19</td></tr>
+                <tr><td class="gray">per month</td></tr>
+                <tr><td>3GB disk space</td></tr>
+                <tr><td>30GB mounthly bandwidth</td></tr>
+                <tr><td>5 email accounts</td></tr>
+                <tr><td>Unlimited subdoments</td></tr>
+                <tr><td><div class="knopka blue">BUY</div></td></tr>
+            </table>  
+          </div>
+      </div>
+
+      <div class="conteiner">
+          <div class="basic block">
+            <table>
+                <tr><th>ENTERPRICE</th></tr>
+                <tr><td class="prise">$9</td></tr>
+                <tr><td class="gray">per month</td></tr>
+                <tr><td>1GB disk space</td></tr>
+                <tr><td>10GB mounthly bandwidth</td></tr>
+                <tr><td>2 email accounts</td></tr>
+                <tr><td>Unlimited subdoments</td></tr>
+                <tr><td><div class="knopka green">BUY</div></td></tr>
+            </table>  
+          </div>
+      </div>
+    </article> 
+</body>
+</html>
